@@ -75,7 +75,19 @@ function changerContenu(type) {
         // Parcourez les éléments de la catégorie et créez les liens correspondants
         categorie.model.forEach(element => {
           const link = document.createElement('a');
-         let lien =element+"."+'html' ;
+         let lien;
+         if(element=="Alpina" || element=="Baltic" ||element=="Beaubleu" || element=="Hanhart"){
+            lien ="Marque.html" ;
+         }
+         else if(element=="Homme"){
+            lien="Homme.html"
+         }
+         else if( element=="Femme"){
+            lien="Femme.html"
+         }
+         else{
+          lien="#"
+         }
           link.href = lien; // Mettez votre lien approprié ici
           link.textContent = element;
           console.log(element);

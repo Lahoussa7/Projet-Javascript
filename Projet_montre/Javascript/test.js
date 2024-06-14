@@ -97,11 +97,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function displayfenetre(){
    const div = document.getElementById("panie")
-   if(div !== null){
+   
     div.addEventListener('click',function(){
         window.location.href = "Liste.html";
     })
-   }
+   
 }
 
 function updateCartNotification() {
